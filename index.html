@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="60x60">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://nadiarasul.me/loopy-ipsum/" />
+  <meta property="og:title" content="Whimsical filler text for your project" />
+  <meta property="og:description" content="Loopy filler text for when your peoject feels like the Mad Hatter's tea party." />
+  <meta property="og:image" content="http://nadiarasul.me/loopy-ipsum/images/rabbit.png" />
+  <meta name="twitter:site" content="@nadiarasul" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="http://nadiarasul.me/loopy-ipsum/images/rabbit.png" />
+  <meta name="twitter:title" content="Whimsical filler text for your project" />
+  <meta name="twitter:description" content="Loopy filler text for when your peoject feels like the Mad Hatter's tea party." />
+  <title>Loopy Ipsum</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Loopy Ipsum</h1>
+      <h2>Whimsical filler text for your project</h2>
+      <p>Inspired by Alice's Adventures in Wonderland</p>
+    </header>
+
+    <main class="app">
+
+      <form action="">
+        <h3>Pick a length</h3>
+
+        <fieldset>
+          <input type="radio" class="choice" name="loremSize" id="Short" value="20" tabindex="0">
+          <label for="Short">Short</label>
+          <input type="radio" class="choice" name="loremSize" id="Medium" value="50" tabindex="0">
+          <label for="Medium">Medium</label>
+          <input type="radio" class="choice" name="loremSize" id="Long" value="70" tabindex="0">
+          <label for="Long">Long</label>
+        </fieldset>
+
+        <div class="submit-button">
+          <input type="submit" class="submit" value="CLICK ME">
+        </div>
+      </form>
+
+      <div class="result" id="aliceLorem"></div>
+      <div class="error"></div>
+      <div class="copy"></div>
+      <div class="log"></div>
+
+      <div class="rabbit">
+        <img src="images/rabbit.png" alt="">
+      </div>
+
+    </main>
+  </div> <!-- end of .wrapper -->
+
+  <footer>
+    <p>Made for fun by <a href="http://wwww.nadiarasul.me">Nadia Rasul</a></p>
+    <p>Illustration: <a href="https://commons.wikimedia.org/wiki/File:Alice_par_John_Tenniel_02.svg">John Tenniel</a>, Alice in Wonderland (1820)</p>
+  </footer>
+
+  <script src="scripts/clipboard.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
